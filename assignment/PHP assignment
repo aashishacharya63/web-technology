@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$name = array("Ram", "Hari", "Shyam");
+sort($name);
+
+$clength = count($name);
+for($x = 0; $x < $clength; $x++) {
+  echo $name[$x];
+  echo "<br>";
+}
+?>
+<?php
+$name = array("Ram", "Hari", "Shyam");
+rsort($name);
+
+$clength = count($name);
+for($x = 0; $x < $clength; $x++) {
+  echo $name[$x];
+  echo "<br>";
+}
+?>
+<?php
+$age = array("ram"=>"35", "hari"=>"40", "shyam"=>"20");
+asort($age);
+
+foreach($age as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+?>
+<?php
+$age = array("ram"=>"35", "hari"=>"40", "shyam"=>"20");
+ksort($age);
+
+foreach($age as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+?>
+<?php
+$age = array("ram"=>"35", "hari"=>"40", "shyam"=>"20");
+arsort($age);
+
+foreach($age as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+?>
+<?php
+$age = array("ram"=>"35", "hari"=>"40", "shyam"=>"20");
+krsort($age);
+
+foreach($age as $x => $x_value) {
+  echo "Key=" . $x . ", Value=" . $x_value;
+  echo "<br>";
+}
+?>
+</body>
+</html>
